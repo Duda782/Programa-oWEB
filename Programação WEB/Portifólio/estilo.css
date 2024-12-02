@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(181, 46, 243);
+    font-size: 70px;
+    font-weight: 900;
+    text-decoration: wavy;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    font-size: 24px;
+    font-family: 'Courgette', serif;
+    font-style: normal;
+    text-align: justify;
+}
+
+.bg {
+    height: 500px;
+    width: 100%;
+    background-image:();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}

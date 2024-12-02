@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .section1 {
+            display: flex;
+            background-color: white;
+            height: 70vh;
+        }
+
+        .video {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .section2 {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card {
+            background-color: gray;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card img {
+            max-width: 650px; 
+            margin: 0 10px;
+        }
+
+        .arrow {
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .arrow:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="section1">
+        <div class="video">
+          <iframe width="560" height="315" src="https://youtu.be/0BxQuwHLtC0?si=BzR-m9_lsMAEhElG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="info">
+            <h1>Desperta</h1>
+            <p>A música "Desperta" da Colo de Deus é uma verdadeira chamada à transformação espiritual. 
+                Com uma letra profunda e uma melodia envolvente, ela inspira quem ouve a refletir sobre 
+                sua jornada e a se abrir para novos caminhos de fé e renovação interior. A mensagem central 
+                da canção é um convite ao despertar da alma, para que possamos superar as dificuldades da 
+                vida com esperança e confiança em algo maior. Além disso, a combinação de harmonia e letras
+                poéticas faz dessa música uma experiência que toca o coração, proporcionando um momento de 
+                reflexão e conexão com a espiritualidade. Se você está buscando um instante de paz e 
+                renovação.</p>
+        </div>
+    </div>
+    <div class="section2">
+        <h2>Mais de 500 alunos iniciaram o curso</h2>
+        <div class="card">
+           <img src="setaesquerda-a74b4d3e894b42f696072394a2628880.svg" alt="" class="arrow" id="seta-esquerda" onclick="imagemAnterior()">
+           <img src="Leonardo-d766b6b2d9fb4029a3322305fbd009f1.svg" alt="" class="slider-image">
+           <img src="Samantha-fbc2906d694e40948b55acd983bcf5d7.svg" alt="" class="slider-image">
+           <img src="Bruna-b2260d1ab66e43f4853817e9ad5a6668.svg" alt="" class="slider-image">
+           <img src="setadireita-6c025276016244598883e660f9b9edc9.svg" alt="" class="arrow" id="seta-direita" onclick="proximaImagem()">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
